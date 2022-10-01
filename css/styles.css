@@ -51,6 +51,7 @@ body {
 }
 .heading {
     color: var(--color-heading);
+    font-size: 18px;
 }
 .address-list {
     list-style: none;
@@ -146,6 +147,7 @@ list-style: none;
     list-style: none;
 }
 .team-list h3 {
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.17;
     text-align: center;
