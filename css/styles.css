@@ -3,60 +3,68 @@
     --color-heading: #212121;
     --color-background: #fff;
     --color-background-secondary: #2F303A;
+    --color-background-tertiary: #F5F4FA;
     --font-weight-heading: 700;
     --color-white: #fff;
     --color-accent: #2196F3;
+    --color-black: #000;
+    --ff-roboto: Roboto, sans-serif;
+    --ff-rlw: Raleway, sans-serif;
+    --color-white-transperent: #FFFFFF99;
 }
 body {
-    font-family: Roboto, sans-serif;
+    font-family: var(--ff-roboto), Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: var(--color-primary);
     background-color: var(--color-background);
     letter-spacing: 0.03em;
 }
-header {
+.header {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-footer {
+.footer {
     background-color: var(--color-background-secondary);
     font-size: 14px;
 }  
-a {
+.link {
     text-decoration: none;
     color: var(--color-heading);
 }
-h1 {
+.title {
     font-weight: 900;
-    font-style: 44px;
+    font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
     text-transform: uppercase;
 }
-h2 {
-    font-weight: var(--font-weight-heading);
+.sub-title {
     color: var(--color-heading);
     font-size: 36px;
     text-align: center;
     line-height: 1.16;
 }
-h3 {
-    font-weight: var(--font-weight-heading);
+.heading {
     color: var(--color-heading);
 }
-ul {
+.address-list {
     list-style: none;
-}
-address {
     font-style: normal;
 }
+.address .link {
+    color: var(--color-white-transperent);
+}
+.address .link:hover,
+.address .link:focus {
+    color: var(--color-white);
+}
 .logo {
-    font-family: Raleway, sans-serif;
+    font-family: var(--ff-rlw);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.15;
@@ -65,14 +73,23 @@ address {
     color: #2196F3;
 }
 .studio-header {
-    color: #000;
+    color: var(--color-black);
 }
 .studio-footer {
     color: var(--color-white);
 }
+.nav-header {
+    list-style: none;
+}
 .nav-header a:hover,
 .nav-header a:focus {
     color: var(--color-accent);
+}
+.contacts-header {
+    list-style: none;
+}
+.contacts-header a {
+color: var(--color-primary);
 }
 .contacts-header a:hover,
 .contacts-header a:focus {
@@ -83,7 +100,9 @@ address {
 }
 .order {
     background-color: var(--color-accent);
-    font-family: Roboto, sans-serif;
+    font-family: var(--ff-roboto);
+    font-size: 16px;
+    line-height: 1.88;
     color: var(--color-white);
     border: none;
     text-align: center;
@@ -102,6 +121,9 @@ address {
     clip-path: inset(50%);
     margin: -1px;
 }
+.features-list {
+    list-style: none;
+}
 .features-list h3 {
 font-size: 14px;
 line-height: 1.17;
@@ -109,8 +131,19 @@ line-height: 1.17;
 .features-list p {
     font-size: 14px;
 }
+.we-do-list {
+list-style: none;
+}
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--color-background-tertiary);
+}
+.team-card {
+    background-color: var(--color-background);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-list {
+    list-style: none;
 }
 .team-list h3 {
     font-weight: 500;
@@ -121,15 +154,12 @@ line-height: 1.17;
     line-height: 1.17;
     text-align: center;
 }
-.map {
-    color: var(--color-white);
-}
-.contacts-footer {
-    color: #FFFFFF99;
+.portfolio-nav {
+    list-style: none;
 }
 .portfolio-nav-button {
-    background-color: #F5F4FA;
-    font-family: Roboto, sans-serif;
+    background-color: var(--color-background-tertiary);
+    font-family: var(--ff-roboto);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -141,31 +171,8 @@ line-height: 1.17;
 .portfolio-nav-button:focus {
     background-color: var(--color-accent);
     color: var(--color-white);
+    cursor: pointer;
 }
-.new-orlean {
-    text-transform: capitalize;
-}
-.golden-start {
-    text-transform: capitalize;
-}
-.seafood {
-    text-transform: capitalize;
-}
-.prime {
-    text-transform: capitalize;
-}
-.boxes {
-    text-transform: capitalize; 
-}
-.borders {
-    text-transform: capitalize; 
-}
-.limited-edition {
-    text-transform: capitalize; 
-}
-.lab {
-    text-transform: uppercase; 
-}
-.growing-business {
-  text-transform: capitalize;     
+.portfolio-list {
+    list-style: none;
 }
