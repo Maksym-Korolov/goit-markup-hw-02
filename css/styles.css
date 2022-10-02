@@ -64,6 +64,9 @@ body {
 .address .link:focus {
     color: var(--color-white);
 }
+#map {
+    color: var(--color-white);
+}
 .logo {
     font-family: var(--ff-rlw);
     font-weight: 700;
@@ -71,7 +74,7 @@ body {
     line-height: 1.15;
 }
 .web {
-    color: #2196F3;
+    color: var(--color-accent);
 }
 .studio-header {
     color: var(--color-black);
