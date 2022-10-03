@@ -14,7 +14,6 @@
 }
 body {
     font-family: var(--ff-roboto);
-    font-weight: 400;
     font-size: 16px;
     color: var(--color-primary);
     background-color: var(--color-background);
@@ -64,7 +63,7 @@ body {
 .address .link:focus {
     color: var(--color-white);
 }
-#map {
+.address-list .map {
     color: var(--color-white);
 }
 .logo {
@@ -190,4 +189,5 @@ list-style: none;
 }
 .portfolio-list p {
     line-height: 1.875;
+    color: var(--color-primary);
 }
